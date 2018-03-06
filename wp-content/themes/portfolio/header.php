@@ -78,7 +78,7 @@
                         </div>
 
                         <figure class="picture marg-r--20">
-                            <img src="img/al-rahad.jpg" alt=""/>
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/al-rahad.jpg" alt=""/>
                             <div class="tekst">
                                 <h2 class="font-w600">Al Rayhan</h2>
                                 <p>UI & UX Expert</p>
@@ -159,7 +159,7 @@
                         <div class="skills">
                             <div class="row">
                                 <div class="col-md-3 text-center">
-                                    <img src="img/notebook.png" alt="" class="icon-position-2 icon-margin"/>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/notebook.png" alt="" class="icon-position-2 icon-margin"/>
                                 </div>
                                 <div class="col-md-9 px-5 px-md-3">
                                     <h2 class="mt-4 mb-5 fs-1_5rem">Professional Skills</h2>
