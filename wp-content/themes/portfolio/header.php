@@ -36,24 +36,13 @@
         <!-- navigation starts -->
         <nav class="menu">
             <ul class="side-menu list-unstyled">
-                <li class="actv">
-                    <a href="index.html">Main Page</a>
-                </li>
-                <li>
-                    <a href="portfolio.html">Portfolio</a>
-                </li>
-                <li>
-                    <a href="cover-letter.html">Cover-letter</a>
-                </li>
-                <li>
-                    <a href="project-page.html">Projects</a>
-                </li>
-                <li>
-                    <a href="single.html">Single</a>
-                </li>
-                 <li>
-                    <a href="contact.html">Contact</a>
-                </li>
+              <?php
+                $top_menu = wp_get_nav_menu_items ('main-menu');
+
+                foreach ($top_menu as $menu) {
+                  ?>
+                  <li><a href="<?php echo $menu->url; ?>"><?php echo $menu->title; ?></a></li>
+                <?php     } ?>
             </ul>
             <span class="fa fa-close"></span>
         </nav>
