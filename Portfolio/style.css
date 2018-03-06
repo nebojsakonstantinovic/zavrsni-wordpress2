@@ -1,0 +1,572 @@
+
+/* General */
+
+*{
+    color: #737273;
+}
+
+.inactive{
+    overflow: hidden;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.blue{   
+    background: #06397d;
+}
+
+.gray{
+    background: #dde0e7;
+}
+
+.text-gray{
+    color: #737273;
+}
+
+.light-blue{
+    background:  #e4e9f4; 
+}
+
+.box-shadow{
+    box-shadow: 1px 1px 4.75px 0.25px rgba(24, 24, 24, 0.25);
+}
+
+.fa{
+    font-size: 30px;
+}
+
+.granica-1{
+    margin-right: -20px;
+}
+
+.hr-white{
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.marg-r--20{
+    margin-right: -20px;
+}
+
+.blue-text{
+    color: #0a489a;
+}
+
+.opacity-w-80{
+    color: rgba(255,255,255,0.8);
+}
+
+/*font size */
+
+.fs-1_2rem{
+    font-size: 1.2rem;
+}
+
+.fs-1_5rem{
+    font-size: 1.5rem;
+}
+
+.fs-35{
+    font-size: 35px;
+}
+
+section hr{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-right: -2rem;
+}
+
+.marg-b-2rem{
+   margin-bottom: 2rem; 
+}
+
+.padding-y-2rem{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+/* Picture */
+
+.picture{
+    position: relative;
+}
+
+.picture .tekst{
+    position: absolute;
+    bottom: 10px;
+    right: 20%;
+    color: #fff;
+    z-index: 200;
+}
+
+.picture .shadow{
+    position: absolute;
+    background: linear-gradient(to top, rgba(0,0,0,0.3), rgba(0, 0, 0, 0.005));
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+}
+
+.font-w600{
+    font-weight: 600;
+}
+
+/*icons start */
+
+.icon-position{
+    width: 40px;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.icon-position-2{
+    width: 30px;
+    margin: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.icon-position-3{
+    width: 60px;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.icon-margin{
+    margin-left: auto;
+}
+
+.width-80{
+    width: 80px;
+}
+
+.width-64{
+    width: 64px;
+}
+
+.width-42{
+    width: 42px;
+}
+
+/* general ends */
+
+/* aside starts */
+
+aside{
+    padding-right: 20px !important;
+    padding-bottom: 6rem;
+    height: 100%;
+    position: relative;
+    color: #fff;
+}
+
+aside *{
+   color: #fff; 
+}
+
+aside p{
+    margin-bottom: 0.5rem;
+}
+
+aside hr{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+aside figure{
+  margin-bottom: 2rem;  
+}
+
+.email a{
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.email a:hover{
+    color: #fff;
+}
+
+/*skills */
+
+.skills .blue-bar{
+    height: 2px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.skills .blue-bar .white-bar{
+    height: 2px;
+    width: 0%;
+    background: white;
+    position: absolute;
+    transition: width 3s;
+}
+
+.skills .blue-bar .white-bar .white-circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    right: -5px;
+    top: -4px;
+}
+
+/* aside ends */
+
+/* ne sredjeno */
+
+/* section 1 */
+
+.section-1{
+    margin-top: 1rem;
+}
+
+
+/* section 7 */
+
+.section-7{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.section-7 figure{
+    margin: 0;
+}
+
+.section-7 .red-title{
+    padding: 2.5rem;
+}
+
+.section-7 div:last-of-type{
+    padding: 2.5rem;
+    background: #dde0e7;
+}
+
+/* section 8   Comments  */
+
+.section-8 > article{
+    background: rgba(221, 224, 231, 0.7);
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.section-8 .art-comment{
+    padding: 2rem;
+}
+
+.section-8 figure{
+    width: 64px;
+    height: 64px;
+    overflow: hidden;
+}
+
+.section-8 figure img{
+    width: 100%;
+}
+
+.reply{
+    margin-left: 40px;
+}
+
+
+/* ne sredjeno  strana portfolio*/
+
+/* section 9 */
+
+.section-9{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.section-9 figure{
+    margin: 0;
+}
+
+.section-9 .title{
+    padding: 1rem 2rem;
+}
+
+.section-9 .tekst-2{
+    padding: 1rem;
+    background: #dde0e7;
+}
+
+.section-9 article{
+    margin-bottom: 2rem;   /*promeniti */
+}
+
+/*card !!ne treba   */
+
+/* section 5 */
+
+.section-5{
+    margin-top: 1rem;
+}
+
+/* navigacija i dugme*/
+
+.toggle-menu{
+    padding: 5px;
+    border: 2px solid #06397d;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 4px;
+    z-index: 10;
+    background-color: #06397d;
+}
+
+.toggle-menu span{
+    display: block;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 3px;
+    width: 20px;
+}
+
+.toggle-menu span:last-of-type{
+    margin-bottom: 0;
+}
+
+.menu-overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.2);
+    z-index: 15;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.menu{
+    position: fixed;
+    left: -120%;
+    top: 0;
+    z-index: 2000;
+    transition: 1s ease;
+    min-width: 260px; 
+}
+
+.menu .side-menu{
+    height: 100vh;
+    background: #06397d;
+    padding: 0;
+    min-width: 200px;
+}
+
+/* novo css */
+
+.menu .side-menu li{
+    padding: 10px 20px;
+    margin-bottom: 0px;
+}
+
+.menu .side-menu li:hover,
+.actv{
+    background-color: white;
+}
+
+.menu .side-menu li:hover a,
+.actv a{
+    color: #0a489a !important;
+}
+
+.menu .side-menu a{
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.fa-close{
+    position: absolute;
+    right: -30px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    z-index: 20;
+    top: 0;
+    text-align: center;
+    font-size: 30px;
+    color: #06397d;
+}
+
+
+/* navigacija end */
+
+.masonery{
+    position: relative;
+}
+
+
+/* mape ne treba */
+
+#map_wrapper {
+    height: 400px;
+    margin-top: 20px;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* hand */
+
+.hand{
+   cursor: pointer; 
+}
+
+
+/* project page */
+
+.project-page figure {
+overflow:hidden;
+}
+
+.project-page a img{
+transition:1s linear;
+}
+
+.project-page a:hover img{
+transform:scale(1.2);
+}
+
+.project-page a{
+    display: block;
+    position: relative;  
+}
+
+.project-page a *{
+    color: white;
+}
+
+.project-page .hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 5% 10%;
+    display: none;
+}
+
+.project-page a:hover .hover{
+   display: block; 
+}
+
+.section-11 textarea{
+    resize: none;
+}
+
+/* slike funkcija */
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+
+/*animacije*/
+
+.animation{
+    visibility: hidden;
+    position: relative;
+    transition: 1s linear;
+}
+
+@keyframes slideLeft {
+    0%{
+        opacity:0;
+        transform:translateX(50%);
+    }
+    
+    100%{
+        opacity:1;
+        transform:translateX(0%);
+    }
+}
+
+.slideLeft{
+    animation-name: slideLeft;
+    visibility: visible;
+    animation-duration: 2s;
+}
+
+@keyframes slideRight {
+    0%{
+        opacity:0;
+        transform:translateX(-50%);
+    }
+    
+    100%{
+        opacity:1;
+        transform:translateX(0%);
+    }
+}
+
+.slideRight{
+    animation-name: slideRight;
+    visibility: visible;
+    animation-duration: 1s;
+}
+
+@keyframes slideUp {
+    0%{
+        opacity:0;
+        transform:translateY(50%);
+    }
+    
+    100%{
+        opacity:1;
+        transform:translateY(0%);
+    }
+}
+
+.slideUp{
+    animation-name: slideUp;
+    visibility: visible;
+    animation-duration: 1s;
+}
+
+@keyframes slideDown {
+    0%{
+        opacity:0;
+        transform:translateY(-50%);
+    }
+    
+    100%{
+        opacity:1;
+        transform:translateY(0%);
+    }
+}
+
+.slideDown{
+    animation-name: slideDown;
+    visibility: visible;
+    animation-duration: 1s;
+}
+
+/*animajice kraj*/
+
+
+
+
