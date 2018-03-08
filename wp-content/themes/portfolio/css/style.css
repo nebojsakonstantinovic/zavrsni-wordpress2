@@ -14,11 +14,12 @@ img{
     display: block;
 }
 
+
 a{
     text-decoration: none !important;
 }
 
-.blue{   
+.blue{
     background: #06397d;
 }
 
@@ -31,7 +32,7 @@ a{
 }
 
 .light-blue{
-    background:  #e4e9f4; 
+    background:  #e4e9f4;
 }
 
 .box-shadow{
@@ -83,7 +84,7 @@ section hr{
 }
 
 .marg-b-2rem{
-   margin-bottom: 2rem; 
+   margin-bottom: 2rem;
 }
 
 .padding-y-2rem{
@@ -170,7 +171,7 @@ aside{
 }
 
 aside *{
-   color: #fff; 
+   color: #fff;
 }
 
 aside p{
@@ -183,7 +184,7 @@ aside hr{
 }
 
 aside figure{
-  margin-bottom: 2rem;  
+  margin-bottom: 2rem;
 }
 
 .email a{
@@ -240,6 +241,10 @@ aside figure{
 .section-7{
     margin-bottom: 1rem;
     margin-top: 1rem;
+}
+
+.section-7 img{
+  width: 100%;
 }
 
 .section-7 figure{
@@ -358,7 +363,7 @@ aside figure{
     top: 0;
     z-index: 2000;
     transition: 1s ease;
-    min-width: 260px; 
+    min-width: 260px;
 }
 
 .menu .side-menu{
@@ -429,7 +434,7 @@ aside figure{
 /* hand */
 
 .hand{
-   cursor: pointer; 
+   cursor: pointer;
 }
 
 
@@ -449,7 +454,7 @@ transform:scale(1.2);
 
 .project-page a{
     display: block;
-    position: relative;  
+    position: relative;
 }
 
 .project-page a *{
@@ -468,7 +473,7 @@ transform:scale(1.2);
 }
 
 .project-page a:hover .hover{
-   display: block; 
+   display: block;
 }
 
 .section-11 textarea{
@@ -498,7 +503,7 @@ transform:scale(1.2);
         opacity:0;
         transform:translateX(50%);
     }
-    
+
     100%{
         opacity:1;
         transform:translateX(0%);
@@ -516,7 +521,7 @@ transform:scale(1.2);
         opacity:0;
         transform:translateX(-50%);
     }
-    
+
     100%{
         opacity:1;
         transform:translateX(0%);
@@ -534,7 +539,7 @@ transform:scale(1.2);
         opacity:0;
         transform:translateY(50%);
     }
-    
+
     100%{
         opacity:1;
         transform:translateY(0%);
@@ -552,7 +557,7 @@ transform:scale(1.2);
         opacity:0;
         transform:translateY(-50%);
     }
-    
+
     100%{
         opacity:1;
         transform:translateY(0%);
@@ -566,7 +571,3 @@ transform:scale(1.2);
 }
 
 /*animajice kraj*/
-
-
-
-
