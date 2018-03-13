@@ -69,8 +69,8 @@
                         <figure class="picture marg-r--20">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/al-rahad.jpg" alt=""/>
                             <div class="tekst">
-                                <h2 class="font-w600">Al Rayhan</h2>
-                                <p>UI & UX Expert</p>
+                                <h2 class="font-w600"><?php echo get_field('first_name',48) . ' ' . get_field('last_name',48); ?></h2>
+                                <p><?php echo get_field('position',48)?></p>
                             </div>
                             <div class="shadow"></div>
                         </figure>
@@ -82,11 +82,7 @@
                                 </div>
                                 <div class="col-md-9 pr-3">
                                     <div class="px-5 px-md-0">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                            sed do eiusmod tempor incididunt ut labor et dolore magna aliqua.
-                                            Ut enim ad minim veniamnt in culpa quie officia deserunt mollit.
-                                        </p>
+                                        <p><?php echo get_field('about_me',48)?></p>
                                     </div>
                                     <hr class="granica-1 hr-white">
                                 </div>
@@ -102,9 +98,9 @@
                                 </div>
                                 <div class="col-md-9">
                                     <div class="px-5 px-md-0">
-                                        <p>(880) 1737-662662</p>
+                                        <p><?php echo get_field('personal_phone',48)?></p>
                                         <p class="opacity-w-80 mb-4">Mobile</p>
-                                        <p>(880) 1771-299299</p>
+                                        <p><?php echo get_field('work_phone',48)?></p>
                                         <p class="opacity-w-80">Work</p>
                                     </div>
                                     <hr class="granica-1 hr-white">
@@ -119,9 +115,9 @@
                                 </div>
                                 <div class="col-md-9">
                                     <div class="px-5 px-md-0">
-                                        <a href="mailto:mail@alrayhan.com">mail@alrayhan.com</a>
+                                        <a href="mailto:mail@alrayhan.com"><?php echo get_field('personal_email',48)?></a>
                                         <p class="opacity-w-80 mb-4">Personal</p>
-                                        <a href="mailto:ar@deviserweb.com">ar@deviserweb.com</a>
+                                        <a href="mailto:ar@deviserweb.com"><?php echo get_field('work_email',48)?></a>
                                         <p class="opacity-w-80">Work</p>
                                     </div>
                                     <hr class="granica-1 hr-white">
@@ -144,6 +140,8 @@
                                 </div>
                             </div>
                         </div>
+
+
 
                         <div class="skills">
                             <div class="row">

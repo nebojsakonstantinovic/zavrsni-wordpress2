@@ -7,6 +7,27 @@
 ?>
 
 <?php
+
+if(isset ($_POST) && !empty($_POST)) {
+    $name = $_POST['W_name'];
+    echo  $_POST['W_name'];
+    echo "<br />";
+    $email = $_POST['W_email'];
+    echo $_POST['W_email'];
+    echo "<br />";
+    $message = $_POST['W_message'];
+    echo $_POST['W_message'];
+    echo "<br />";
+
+    $emailbody = "ovo su podaci: $name, $email, $message";
+    $result = mail("nebojsa.konstantin@gmail.com", "poruka sa sajta", $emailbody);
+
+}
+
+
+ ?>
+
+<?php
 get_header();
  ?>
 
@@ -28,10 +49,22 @@ get_header();
                  <h2 class="mt-4">Contact</h2>
                  <!--forma -->
                  <form class="contact-form" method="post" action="">
+
+                      <?php
+                        if($result){
+                          echo "<p>Vasa poruka je poslata</p>";
+                        } else if(!isset($result)){
+                          //do nothing
+                        } else {
+                          echo "<p>Vasa poruka nije poslata</p>";
+                        }
+                       ?>
+
+
                      <!-- name -->
                      <div class="form-group">
                          <div class="input-group">
-                             <input class="form-control" name="name" value="" placeholder="Name*">
+                             <input class="form-control" name="W_name" value="" placeholder="Name*">
                              <span class="input-group-addon fa fa-user-o fs-35"></span>
                          </div>
                          <div class="error"></div>
@@ -39,7 +72,7 @@ get_header();
                      <!-- email -->
                      <div class="form-group">
                          <div class="input-group">
-                             <input class="form-control" name="email" value="" placeholder="Email*">
+                             <input class="form-control" name="W_email" value="" placeholder="Email*">
                              <span class="input-group-addon fa fa-envelope-o"></span>
                          </div>
                          <div class="error"></div>
@@ -47,7 +80,7 @@ get_header();
                      <!-- message -->
                      <div class="form-group">
                          <div class="input-group">
-                             <input class="form-control" name="message" value="" placeholder="Message*">
+                             <input class="form-control" name="W_message" value="" placeholder="Message*">
                              <span class="input-group-addon fa fa-file-text-o fs-35"></span>
                          </div>
                          <div class="error"></div>
@@ -115,15 +148,15 @@ get_header();
              $(element).removeClass('form-control-danger').addClass('form-control-success');
          },
          rules: {
-             name: {
+             W_name: {
                  required: true,
                  rangelength: [3, 255]
              },
-             email: {
+             W_email: {
                  required: true,
                  email: true
              },
-             message: {
+             W_message: {
                  required: true,
                  rangelength: [10, 255]
              }
@@ -131,15 +164,15 @@ get_header();
 
          },
          messages: {
-             name: {
+             W_name: {
                  required: "The *Name field is required!",
                  rangelength: "The *Name must be between 3 and 255 characters!"
              },
-             email: {
+             W_email: {
                  required: "The *Email field is required!",
                  email: "Pleas enter a valid email adress"
              },
-             message: {
+             W_message: {
                  required: "The *Name field is required!",
                  rangelength: "The *Message must be between 10 and 255 characters!"
              }
