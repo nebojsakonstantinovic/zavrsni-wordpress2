@@ -150,30 +150,47 @@
                                 </div>
                                 <div class="col-md-9 px-5 px-md-3">
                                     <h2 class="mt-4 mb-5 fs-1_5rem">Professional Skills</h2>
-                                    <h4 class="fs-1_2rem">Adobe Photoshop</h4>
-                                    <div class="blue-bar" data-skill="90">
+
+                                    <?php
+                                          ///experience sections
+
+                                          $args = array(
+                                            "numberposts" => -1,
+                                            "post_type" => "skills"
+                                          );
+                                          $skills = get_posts($args);
+                                     ?>
+
+                                     <?php foreach ($skills as $s) { ?>
+                                       <?php $num = get_field("skill_percent", $s->ID); ?>
+
+                                    <h4 class="fs-1_2rem"><?php echo $s->post_title; ?></h4>
+                                    <div class="blue-bar" data-skill="<?php echo $num; ?>">
                                         <div class="white-bar">
                                             <span class="white-circle"></span>
                                         </div>
                                     </div>
-                                    <h4 class="fs-1_2rem">Adobe Illustrator</h4>
+                                    <?php } ?>
+<!--
+                                    <h4 class="fs-1_2rem"<?php //echo $s->post_title; ?></h4>
                                     <div class="blue-bar" data-skill="70">
                                         <div class="white-bar">
                                             <span class="white-circle"></span>
                                         </div>
                                     </div>
-                                    <h4 class="fs-1_2rem">HTML 5 &AMP; CSS 3</h4>
+                                    <h4 class="fs-1_2rem"<?php //echo $s->post_title; ?></h4>
                                     <div class="blue-bar" data-skill="80">
                                         <div class="white-bar">
                                             <span class="white-circle"></span>
                                         </div>
                                     </div>
-                                    <h4 class="fs-1_2rem">Java Script</h4>
+                                    <h4 class="fs-1_2rem"<?php //echo $s->post_title; ?></h4>
                                     <div class="blue-bar" data-skill="65">
                                         <div class="white-bar">
                                             <span class="white-circle"></span>
                                         </div>
-                                    </div>
+                                    </div> -->
+
                                 </div>
                             </div>
                         </div>

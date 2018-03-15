@@ -14,7 +14,9 @@ get_header();
                     <img src="<?php echo get_template_directory_uri(); ?>/img/ok.png" alt="" class="icon-position"/>
                 </div>
                 <div class="col-md-10 pr-5 pl-5 pl-md-0">
-                    <h2 class="mt-4">Work Experiences</h2>
+
+                  
+                    <!-- <h2 class="mt-4">Work Experiences</h2>
 
                     <h4>UI & WEB DESIGNER @Academy</h4>
                     <p class="blue-text mb-1">JAN 2013 - DEC 2014</p>
@@ -39,7 +41,7 @@ get_header();
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing
                         elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
+                    </p> -->
                 </div>
             </div>
         </section>
